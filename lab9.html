@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<h1>Feedback Form</h1>
+
+	<p>Please fill out this form to help us improve our site.</p>
+	
+	<p><label>Name:
+		<input name = "name" type="text" size="25" maxlength="30"></label></p>
+
+		<p><code><textarea rows="5" cols="50">
+Enter comments here.
+		</textarea></code></p>
+<p><label>E-mail Address:
+	<input type="text" name="E-mail" size="10" maxlength="30"></label></p>
+
+</head>
+<body>
+	<b>Things you liked:</b>
+<form action="action_page.php" method="get">
+	<input type="checkbox" name="Things" value="Site design">Site design
+<input type="checkbox" name="Things" value="Links">Links
+<input type="checkbox" name="Things" value="Ease of use">Ease of use
+<input type="checkbox" name="Things" value="Images">Images
+<input type="checkbox" name="Things" value="Source code">Source code
+<p><b>How did you get to our site?:</b><br>
+	<form>
+		<input type="radio" name="how" value="Search engine">Search engine
+		<input type="radio" name="how" value="Links">Links from another site
+		<input type="radio" name="how" value="web site">Deitel.com Web site
+		<input type="radio" name="how" value="book">Reference in a book
+		<input type="radio" name="how" value="others">Others
+</p>
+<p>Rate our site:
+<form action="/action_page.php">
+<select name="Rate">
+<option value="Amazing">Amazing</option>
+<option value="Well">Well</option>
+<option value="Good">Good</option>
+<option value="Soso">Soso</option>
+</select>
+<br><br>
+
+<input type="submit" value="Submit" >
+<input type="reset" name="Clear">
+ </p>
+</body>
+</html>
